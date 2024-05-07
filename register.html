@@ -1,0 +1,13 @@
+<!-- Registration Form -->
+<form action="http://127.0.0.1:8000/api/buyer/register/" method="post">
+  {% csrf_token %}
+  <label for="username">Username:</label><br />
+  <input type="text" id="username" name="username" /><br />
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="email" /><br />
+  <label for="password1">Password:</label><br />
+  <input type="password" id="password1" name="password1" /><br />
+  <label for="password2">Confirm Password:</label><br />
+  <input type="password" id="password2" name="password2" /><br />
+  <input type="submit" value="Register" />
+</form>
